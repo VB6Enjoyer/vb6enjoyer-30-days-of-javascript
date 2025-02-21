@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" />
+    <title>World Countries Data</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+        body,
+        .graph-buttons {
+            text-align: center;
+            background-color: #000000;
+            color: #ffffff;
+            font-family: "Montserrat";
+        }
+
+        #countries,
+        .graphs {
+            background-color: #111111;
+        }
+
+        header {
+            padding-bottom: 10px;
+        }
+
+        header>h2 {
+            margin: 0 auto;
+            font-size: 44px;
+            color: #f89b11;
+        }
+
+        .graph-buttons {
+            padding-top: 30px;
+        }
+
+        button {
+            background-color: #f89b11;
+            border: none;
+            font-size: 17px;
+            padding: 7px 20px;
+            margin: 0px 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            box-shadow: #f89b11 0px 0px 10px;
+        }
+
+        .graph-wrapper {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            margin: 10px 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="countries">
+        <h2>World Countries Data</h2>
+        <p class="subtitle"></p>
+    </header>
+    <main>
+        <div class="wrapper">
+            <div class="graph-buttons">
+                <button class="population">POPULATION</button>
+                <button class="languages">LANGUAGES</button>
+            </div>
+            <h4 class="graph-title"></h4>
+            <div class="graphs">
+                <div class="graph-wrapper" id="stat"></div>
+            </div>
+        </div>
+    </main>
+    <script src="countries_data.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

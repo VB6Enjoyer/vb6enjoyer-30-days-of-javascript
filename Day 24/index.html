@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Day 24 | Solar System: Document Object Model:30 Days Of JavaScript</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            text-align: center;
+            height: 100vh;
+            background-image: url("src/galaxy.gif");
+            background-color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        h1 {
+            font-size: 50px;
+            text-shadow: #6365a8 2px 3px 10px;
+            color: white;
+        }
+
+        #mass {
+            border: none;
+            font-size: 24px;
+            padding: 7px 5px;
+            vertical-align: middle;
+            width: 300px;
+            margin-right: 15px;
+        }
+
+        select {
+            border: none;
+            border-radius: 4px;
+            font-size: 22px;
+            vertical-align: middle;
+            padding: 6px;
+            margin-right: 15px;
+        }
+
+        button {
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 18px;
+            vertical-align: middle;
+            padding: 9px 12px;
+            background-color: rgba(107, 107, 107, 0.8);
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgba(107, 0, 107, 0.5);
+            box-shadow: rgba(107, 0, 107, 0.7) 0px 0px 50px;
+        }
+
+        .flex-container {
+            background-color: rgba(107, 107, 107, 0.4);
+            margin: 20px 300px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .image {
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            margin: 50px;
+        }
+
+        .description {
+            color: white;
+            text-align: center;
+            align-items: center;
+            font-size: 24px;
+            background-color: rgba(67, 67, 67, 0.66);
+            visibility: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Calculate the weight of an object on a planet</h1>
+
+        <input type="text" id="mass" placeholder="Mass in Kilograms" />
+        <select>
+            <option value='none'>--Select planet--</option>
+        </select>
+        <button>Calculate weight</button>
+
+    </header>
+    <main>
+        <div class="flex-container">
+            <div class="flex-item image">
+                <img src='src/earth.png' class="planet-image" />
+            </div>
+            <div class="flex-item description"></div>
+
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>

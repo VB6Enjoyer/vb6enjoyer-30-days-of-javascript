@@ -33,3 +33,5 @@ This repo has all of my solutions to the <a href="https://github.com/Asabeneh/30
   <li>Simple animation using dynamic styling through JS</li>
   <li>World countries data and population/languages stats visualization web app with filtering and conditional sorting, and form validator using RegEx</li>
 </ol>
+
+The exercises from day 21 onwards are generally interesting and can take a few hours to make, especially if you have attention to detail like me. Some require a bit of slightly complex logic. Since the challenge doesn't include any reference files for the apps that I had to build, all of them were built using images and gifs provided in the challenge as reference, so there are some liberties taken.
